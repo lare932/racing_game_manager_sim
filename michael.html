@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Team Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h2>Scuderia <span>Apex</span></h2>
+            </div>
+            <nav class="menu">
+                <button class="active">Headquarters</button>
+                <button>R&D Department</button>
+                <button>Driver Contracts</button>
+                <button>Season Standings</button>
+            </nav>
+            <div class="next-race-action">
+                <button id="btn-race" class="race-btn">Simulate Race</button>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            
+            <!-- Top Status Bar -->
+            <header class="topbar">
+                <div class="stat-box">
+                    <span class="label">Budget</span>
+                    <span class="value budget" id="display-budget">$12,500,000</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Prestige Level</span>
+                    <span class="value" id="display-prestige">45 / 100</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Next Race</span>
+                    <span class="value">Grand Prix of Japan</span>
+                </div>
+            </header>
+
+            <!-- Management Panels -->
+            <section class="panels-grid">
+                
+                <!-- Driver Panel -->
+                <article class="panel">
+                    <h3>Current Driver</h3>
+                    <div class="panel-content">
+                        <div class="avatar-placeholder"></div>
+                        <div class="details">
+                            <h4 id="driver-name">Alex Thorne</h4>
+                            <p>Skill: <span id="driver-skill">82</span></p>
+                            <p>Morale: <span id="driver-morale">High</span></p>
+                            <p>Salary: $450k/race</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Car Development Panel -->
+                <article class="panel">
+                    <h3>Chassis Status</h3>
+                    <div class="panel-content car-stats">
+                        <div class="stat-bar">
+                            <span>Top Speed</span>
+                            <div class="bar-bg"><div class="bar-fill speed" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="stat-bar">
+                            <span>Cornering</span>
+                            <div class="bar-bg"><div class="bar-fill cornering" style="width: 60%;"></div></div>
+                        </div>
+                        <div class="stat-bar">
+                            <span>Reliability</span>
+                            <div class="bar-bg"><div class="bar-fill reliability" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Race Log / Console -->
+                <article class="panel log-panel span-full">
+                    <h3>Race Engineers Log</h3>
+                    <div class="log-output" id="race-log">
+                        <p class="log-entry system">System initialized. Waiting for commands...</p>
+                        <p class="log-entry alert">Sponsor payment received: $1,200,000</p>
+                        <p class="log-entry">Aerodynamics upgrade completed.</p>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Link your JS modules here later -->
+    <!-- <script src="js/app.js"></script> -->
+</body>
+</html>
